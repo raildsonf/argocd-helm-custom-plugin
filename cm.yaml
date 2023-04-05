@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  cluster.properties: |
+    service.type=LoadBalancer
+    service.port=81
+    replicaCount=9
+    image.pullPolicy=Always
+kind: ConfigMap
+metadata:
+  name: envconfigs
+  namespace: argocd
