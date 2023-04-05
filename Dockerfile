@@ -4,4 +4,4 @@ COPY helm-wrapper.sh /usr/local/bin/
 RUN cd /usr/local/bin && \
     mv helm helm.bin && \
     mv helm-wrapper.sh helm && \
-    chmod +x helm helm.bin
+    chmod +x helm
